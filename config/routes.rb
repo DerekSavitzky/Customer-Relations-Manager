@@ -1,5 +1,8 @@
 CRM::Application.routes.draw do
   resources :customers
+  root :to => 'finder#missing_email', :via => :get
+  #root :to => 'finder#index', :via => :get
+  #get 'customers', :to => 'finder#missing_email'
 
 
   # The priority is based upon order of creation:

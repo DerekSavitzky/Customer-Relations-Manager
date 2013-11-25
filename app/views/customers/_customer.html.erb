@@ -1,12 +1,8 @@
-<section class="customer">
-  <h3><%= customer.full_name %></h3>
-  
-  <p><%= image_tag customer.image %></p>
-  
-  <div><%= customer.phone_number %></div>
-  
-  <div><%= customer.email_address %></div>
-  
-  <div><%= customer.notes %></div>
-  
-</section>
+
+    <td>
+    <h2><%= customer.full_name %></h2>
+    <%= image_tag customer.image, :width => '150' %></br>
+    <%= customer.phone_number %></br>
+    <%= customer.email_address %></br>
+    <%= customer.notes %></br>
+    </td>
